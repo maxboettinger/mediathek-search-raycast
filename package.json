@@ -1,11 +1,20 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "mediathek-search",
+  "version": "1.0.0",
   "title": "mediathek-search",
   "description": "query databases of german(-speaking) publicly funded TV-Stations (OER) directly via raycast.",
   "icon": "command-icon.png",
-  "author": "maxboettinger",
+  "author": "Max @maxboettinger",
   "license": "MIT",
+  "homepage": "https://github.com/maxboettinger/mediathek-search-raycast",
+  "repository": "maxboettinger/mediathek-search-raycast",
+  "bugs": "https://github.com/maxboettinger/mediathek-search-raycast/issues",
+  "keywords": [
+    "mediathek",
+    "OER",
+    "raycast"
+  ],
   "commands": [
     {
       "name": "index",
