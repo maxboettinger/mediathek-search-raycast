@@ -50,7 +50,7 @@ export default function Command() {
         <List.Item
           key={index}
           title={r.title}
-          subtitle={r.channel}
+          subtitle={r.topic + " / " + r.channel}
           accessoryTitle={(r.duration / 60).toFixed(2) + "m - " + moment(r.timestamp, "X").format("DD.MM.YYYY HH:mm")}
           actions={
             <ActionPanel>
