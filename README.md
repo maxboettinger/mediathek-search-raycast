@@ -8,6 +8,14 @@ query databases of german(-speaking) publicly funded TV-Stations (OER) via [Rayc
 
 ![Example](https://abload.de/img/samplembjlv.png)
 
+# Usage
+
+The underlying search and filter mechanics are implemented the same way as with the original [MediathekViewWeb](https://github.com/mediathekview/mediathekviewweb) project. 
+
+I strongly recommend  reading [their well documented guide](https://github.com/mediathekview/mediathekviewweb#erweiterte-suche).
+
+
+
 # Setup
 
 ⚠️ You need to have [Raycast](https://raycast.com/) installed on your system. After running the commands below, the extension will be available to use.
