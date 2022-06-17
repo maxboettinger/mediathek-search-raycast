@@ -27,7 +27,8 @@ export default function Command() {
         setResults(res[0].results);
         showToast({
           title: "Success",
-          message: "Found " + res[0].queryInfo.totalResults + " results in " + res[0].queryInfo.searchEngineTime + "s!",
+          message:
+            "Found " + res[0].queryInfo.totalResults + " results in " + res[0].queryInfo.searchEngineTime + "ms!",
           style: Toast.Style.Success,
         });
       })
@@ -55,8 +56,8 @@ export default function Command() {
           actions={
             <ActionPanel>
               <ActionPanel.Section>
-                <Action.CopyToClipboard title="Copy" content={r.url_video_hd} />
                 <Action.Open title="Playback" target={r.url_video_hd} />
+                <Action.CopyToClipboard title="Copy" content={r.url_video_hd} />
               </ActionPanel.Section>
             </ActionPanel>
           }
