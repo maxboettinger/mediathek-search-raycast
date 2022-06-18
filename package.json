@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "mediathek-search-raycast",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "title": "mediathek-search-raycast",
   "description": "query databases of german(-speaking) publicly funded TV-Stations (OER) directly via raycast.",
   "icon": "command-icon.png",
