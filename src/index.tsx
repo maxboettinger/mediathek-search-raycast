@@ -3,12 +3,21 @@ import { ReactElement, useEffect, useState } from "react";
 import { queryApi } from "./modules/request";
 import moment from "moment";
 
-export default function Command() {
+interface QueryArguments {
+  title: string;
+  channel?: string;
+}
+
+export default function Command(props: { arguments: QueryArguments }) {
+  const { title, channel } = props.arguments;
   const [isLoading, setIsLoading] = useState(false);
   const [toTranslate, setToTranslate] = useState("");
   const [results, setResults] = useState<{ results: [] }[]>([]);
 
   useEffect(() => {
+    // this is a dirty fix
+    setToTranslate(title + " !" + channel);
+
     if (toTranslate === "") {
       return;
     }
@@ -42,7 +51,8 @@ export default function Command() {
 
   return (
     <List
-      searchBarPlaceholder="Search for content..."
+      searchBarPlaceholder="Find in results..."
+      navigationTitle="Search OER Mediathek"
       onSearchTextChange={setToTranslate}
       isLoading={isLoading}
       throttle

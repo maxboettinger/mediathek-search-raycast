@@ -20,7 +20,20 @@
       "name": "index",
       "title": "Search Mediathek",
       "description": "Search for content",
-      "mode": "view"
+      "mode": "view",
+      "arguments": [
+        {
+          "name": "title",
+          "placeholder": "Title",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "channel",
+          "placeholder": "Channel",
+          "type": "text"
+        }
+      ]
     }
   ],
   "dependencies": {
