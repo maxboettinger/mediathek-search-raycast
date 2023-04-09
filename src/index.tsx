@@ -67,7 +67,7 @@ export default function Command(props: { arguments: QueryArguments }) {
             <ActionPanel>
               <ActionPanel.Section>
                 <Action.Open title="Playback" target={r.url_video_hd} />
-                <Action.CopyToClipboard title="Copy" content={r.url_video_hd} />
+                <Action.CopyToClipboard title="Copy URL" content={r.url_video_hd} />
               </ActionPanel.Section>
             </ActionPanel>
           }
