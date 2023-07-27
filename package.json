@@ -19,6 +19,7 @@
     {
       "name": "index",
       "title": "Search Mediathek",
+      "subtitle": "Title/Channel/Topic",
       "description": "Search for content",
       "mode": "view",
       "arguments": [
@@ -31,6 +32,11 @@
         {
           "name": "channel",
           "placeholder": "Channel",
+          "type": "text"
+        },
+        {
+          "name": "topic",
+          "placeholder": "Topic",
           "type": "text"
         }
       ]
